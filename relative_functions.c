@@ -523,3 +523,24 @@ double CalculateWi(double *parent1gamete, double *parent2gamete, int totalindivi
     newwi = exp(currentlinkageblockssum);
     return newwi;
 }
+
+double CalculateWidominance(double *parent1gamete, double *parent2gamete, int totalindividualgenomelength)
+{
+    double newwi = 0.0;
+    long double currentlinkageblockssum = 0.0;
+    int i;
+    int Vmax = 1;
+    double Km = 0.2;
+    double a = 0.5;
+    double fitness;
+
+    
+    for (i = 0; i < (totalindividualgenomelength/2; i++)) {
+        double geneactivity = (a*parent1gamete[i]) + (a*parent2gamete[i]);
+        fitness = (geneactivity * Vmax) / (Km + geneactivity);
+        currentlinkageblockssum += fitness;
+    }
+
+    newwi = exp(currentlinkageblockssum);
+    return newwi;
+}
