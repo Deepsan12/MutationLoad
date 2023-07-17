@@ -19,3 +19,5 @@ absolute_functions.o: absolute_functions.c
     $(CC) $(CFLAGS) -c -std=c99 /home/u32/sandeepb/tskit/c/subprojects/kastore/kastore.c
 /home/u32/sandeepb/tskit/c/tskit/core.o: /home/u32/sandeepb/tskit/c/tskit/core.c
     $(CC) $(CFLAGS) -c -std=c99 /home/u32/sandeepb/tskit/c/tskit/core.c
+/home/u32/sandeepb/tskit/c/tskit/trees.o: /home/u32/sandeepb/tskit/c/tskit/trees.c
+	$(CC) $(CFLAGS) -c -std=c99 /home/u32/sandeepb/tskit/c/tskit/trees.c
