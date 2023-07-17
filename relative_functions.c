@@ -535,7 +535,7 @@ double CalculateWidominance(double *parent1gamete, double *parent2gamete, int to
     double fitness;
 
     
-    for (i = 0; i < (totalindividualgenomelength/2; i++)) {
+    for (i = 0; i < (totalindividualgenomelength/2); i++) {
         double geneactivity = (a*parent1gamete[i]) + (a*parent2gamete[i]);
         fitness = (geneactivity * Vmax) / (Km + geneactivity);
         currentlinkageblockssum += fitness;
