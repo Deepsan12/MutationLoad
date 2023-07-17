@@ -16,7 +16,7 @@ slope=0
 seed=57
 K=20000
 #0 for relative; 1 for absolute
-fitnesstype=1
+fitnesstype=0
 r=0.98
 i_init=400
 s=0.01
