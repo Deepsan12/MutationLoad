@@ -132,7 +132,7 @@ void PerformBirth(int tskitstatus, int isburninphaseover, bool ismodular, int el
         }
     }
     else{
-        newwi = (long double) CalculateWi(parent1gamete, parent2gamete, totalindividualgenomelength);
+        newwi = (long double) CalculateWidominance(parent1gamete, parent2gamete, totalindividualgenomelength);
     }
     
     for (i = 0; i < (totalindividualgenomelength/2); i++) {
