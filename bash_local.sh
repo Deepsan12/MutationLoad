@@ -31,6 +31,7 @@ Sbname="1.0000"
 deldist=0
 rawfilesize=10000
 redinK=0
+fixcalc=0
 
 
 if [ $fitnesstype -eq 0 ]
@@ -99,7 +100,7 @@ fi
 SECONDS=0
 echo "start of mutationload program"
 
-./mutationload $timeSteps $initialPopsize $mud $chromosomesize $numberofchromosomes $bentodelrateratio $sb $bendist $typeofrun $slope $seed $K $fitnesstype $r $i_init $s $tskit $modularepis $elementsperl $snapshot $file1 $SdtoSbratio $deldist $rawfilesize $redinK
+./mutationload $timeSteps $initialPopsize $mud $chromosomesize $numberofchromosomes $bentodelrateratio $sb $bendist $typeofrun $slope $seed $K $fitnesstype $r $i_init $s $tskit $modularepis $elementsperl $snapshot $file1 $SdtoSbratio $deldist $rawfilesize $redinK $fixcalc
 
 #$snapshot $directory$file1
 echo $directory$file1
