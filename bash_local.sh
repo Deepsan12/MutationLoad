@@ -7,6 +7,9 @@
 #SBATCH --partition=standard
 #SBATCH --account=masel
 
+pwd; hostname; date
+module load gsl/2.6
+
 #Mutationload variables
 timeSteps=500000
 initialPopsize=20000
