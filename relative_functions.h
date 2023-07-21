@@ -34,4 +34,6 @@ int ChooseParentWithTree(long double *wholepopulationwistree, int popsize, long 
 
 double CalculateWi(double *parent1gamete, double *parent2gamete, int totalindividualgenomelength);
 
+double CalculateWidominance(double *parent1gamete, double *parent2gamete, int totalindividualgenomelength);
+
 #endif // RELATIVE_FUNCTIONS_H_INCLUDED
