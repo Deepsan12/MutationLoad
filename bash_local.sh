@@ -1,4 +1,11 @@
 #!/bin/bash
+#SBATCH --MutationLoad=Slurm_Job
+#SBATCH --ntasks=1
+#SBATCH --nodes=1             
+#SBATCH --mem=1gb                    
+#SBATCH --time=00:01:00   
+#SBATCH --partition=standard
+#SBATCH --account=masel
 
 #Mutationload variables
 timeSteps=500000
