@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --MutationLoad=Slurm_Job
+#SBATCH --job-name-MutationLoad
 #SBATCH --ntasks=1
 #SBATCH --nodes=1             
 #SBATCH --mem=1gb                    
