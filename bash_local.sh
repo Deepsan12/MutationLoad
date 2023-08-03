@@ -11,13 +11,13 @@ pwd; hostname; date
 module load gsl/2.6
 
 #Mutationload variables
-timeSteps=500000
-initialPopsize=20000
-mud=2.0
+timeSteps=50000
+initialPopsize=2000
+mud=4.0
 chromosomesize=50
 numberofchromosomes=23
-bentodelrateratio=0.0
-sb="0.0"
+bentodelrateratio=0.25
+sb=0.5
 #0 for point; 1 for exponential; and 2 for uniform
 bendist=0
 #0 for root; 1 for single
