@@ -531,19 +531,24 @@ double CalculateWidominance(double *parent1gamete, double *parent2gamete, int to
     int i;
     int Vmax = 1;
     double Km = 0.2;
-    double a = 0.5;
+    double a = 0.25;
     double fitness;
     double geneactivity;
 
     for (i = 0; i < (totalindividualgenomelength/2); i++) {
-	if (parent1gamete[i] < 0.00001 && parent2gamete[i] < 0.00001){
-                geneactivity = a;
+	if (parent1gamete[i] < 0.00001){
+                a1 = a;
         }else{
-              	geneactivity = (a*parent1gamete[i]) + (a*parent2gamete[i]);
+              	a1 = (a*parent1gamete[i]);
         }
-
-        fitness = log((geneactivity * Vmax) / (Km + geneactivity));
-        currentlinkageblockssum += fitness;
+        if (parent2gamete[i] < 0.00001){
+                a2 = a;
+        }else{
+              	a2 = (a*parent2gamete[i]);
+        }
+	geneactivity = a1 + a2;
+        fitness = (geneactivity * Vmax) / (Km + geneactivity);
+        currentlinkageblockssum += log(fitness);
     }
 
     newwi = exp(currentlinkageblockssum);
